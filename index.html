@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ToolGhar — All-in-One Online Tools</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>window.addEventListener('load',()=>{if(window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';});</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<header><div class="brand">🛠️ ToolGhar</div><nav><a href="#home">Home</a><a href="#tools">Tools</a><a href="#about">About</a></nav></header>
+<main>
+<section id="home" class="hero"><div class="tag">FREE ONLINE TOOLS</div><h1>हर काम के लिए आसान <span>ToolGhar</span></h1><p>Image, PDF, Text, Calculator, QR और Utility tools — सीधे browser में।</p><input id="search" placeholder="🔎 Tool खोजें..."></section>
+<section id="tools"><div id="grid" class="grid"></div></section>
+<section id="about" class="about"><h2>ToolGhar</h2><p>जहाँ संभव हो files browser में ही process होती हैं। PDF tools के लिए PDF-LIB/PDF.js और QR के लिए QRCode library इस्तेमाल होती है।</p></section>
+</main>
+<div id="modal" class="modal"><div class="box"><button id="close">×</button><div id="content"></div></div></div><div id="toast"></div>
+<script src="script.js"></script>
+</body></html>
